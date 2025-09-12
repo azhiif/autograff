@@ -1,0 +1,40 @@
+
+export default function RealEstatePage() {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="mb-8">
+            <img 
+              src="https://readdy.ai/api/search-image?query=Luxury%20real%20estate%20modern%20mansion%20Beverly%20Hills%20contemporary%20architecture%20premium%20property%20photography%20sophisticated%20composition%20elegant%20design%20clean%20background&width=400&height=300&seq=luxury-realestate-category&orientation=landscape"
+              alt="Real Estate Coming Soon"
+              className="w-96 h-64 object-cover object-top rounded-2xl mx-auto shadow-lg"
+            />
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            Coming Soon
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+            Luxury Real Estate
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            We're compiling an exclusive portfolio of luxury estates, penthouses, and prestigious properties from the world's most desirable locations.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <button 
+              onClick={() => window.open('https://www.autograff.in', '_blank')}
+              className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Back to Home
+            </button>
+            <button 
+              onClick={() => window.open('https://www.autograff.in', '_blank')}
+              className="border border-gray-300 text-gray-700 px-8 py-3 rounded-full hover:bg-gray-50 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Notify Me
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  

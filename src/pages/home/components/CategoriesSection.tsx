@@ -1,48 +1,50 @@
+// import { Link } from "react-router-dom";
 
-export default function CategoriesSection() {
-  const handleClick = () => {
-    window.open('https://www.autograff.in', '_blank');
-  };
+const categories = [
+  {
+    title: 'Luxury Cars',
+    description: 'Supercars, classics, and exotic vehicles',
+    image: 'https://readdy.ai/api/search-image?query=Luxury%20supercar%20collection%20featuring%20Ferrari%2C%20Lamborghini%2C%20McLaren%20in%20pristine%20showroom%20with%20elegant%20lighting%2C%20clean%20modern%20background%2C%20premium%20automotive%20photography%2C%20sophisticated%20composition&width=400&height=300&seq=luxury-cars-category&orientation=landscape',
+    href: 'https://www.autograff.in',
+    external: true
+  },
+  {
+    title: 'Superyachts',
+    description: 'Motor yachts, sailing yachts, and megayachts',
+    image: 'https://readdy.ai/api/search-image?query=Luxury%20superyacht%20in%20pristine%20marina%20with%20elegant%20design%2C%20premium%20yacht%20photography%2C%20sophisticated%20maritime%20setting%2C%20clean%20modern%20composition%2C%20professional%20lighting&width=400&height=300&seq=luxury-yachts-category&orientation=landscape',
+    href: '/coming-soon/yachts',
+  },
+  {
+    title: 'Private Jets',
+    //count: '1,200+',
+    description: 'Business jets, charter aircraft, and helicopters',
+    image: 'https://readdy.ai/api/search-image?query=Luxury%20private%20jet%20business%20aircraft%20in%20premium%20hangar%20with%20elegant%20lighting%2C%20sophisticated%20aviation%20photography%2C%20clean%20modern%20composition%2C%20professional%20aircraft%20display&width=400&height=300&seq=luxury-jets-category&orientation=landscape',
+    href: '/coming-soon/jets',
+  },
+  {
+    title: 'Luxury Watches',
+    //count: '8,500+',
+    description: 'Swiss timepieces, vintage watches, and collectibles',
+    image: 'https://readdy.ai/api/search-image?query=Luxury%20watch%20collection%20Rolex%20Patek%20Philippe%20premium%20timepieces%20elegant%20display%20sophisticated%20watch%20photography%20clean%20modern%20background%20professional%20lighting&width=400&height=300&seq=luxury-watches-category&orientation=landscape',
+    href: '/coming-soon/watches',
+  },
+  {
+    title: 'Real Estate',
+    //count: '2,800+',
+    description: 'Estates, penthouses, and exclusive properties',
+    image: 'https://readdy.ai/api/search-image?query=Luxury%20real%20estate%20modern%20mansion%20Beverly%20Hills%20contemporary%20architecture%20premium%20property%20photography%20sophisticated%20composition%20elegant%20design%20clean%20background&width=400&height=300&seq=luxury-realestate-category&orientation=landscape',
+    href: '/coming-soon/real-estate',
+  },
+  {
+    title: 'Fine Art',
+    //count: '5,200+',
+    description: 'Paintings, sculptures, and collectible artwork',
+    image: 'https://readdy.ai/api/search-image?query=Fine%20art%20gallery%20masterpieces%20Picasso%20Monet%20contemporary%20art%20museum%20quality%20artwork%20sophisticated%20art%20photography%20elegant%20display%20premium%20composition%20clean%20background&width=400&height=300&seq=luxury-art-category&orientation=landscape',
+    href: '/coming-soon/art',
+  }
+];
 
-  const categories = [
-    {
-      title: 'Luxury Cars',
-      //count: '15,000+',
-      description: 'Supercars, classics, and exotic vehicles',
-      image: 'https://readdy.ai/api/search-image?query=Luxury%20supercar%20collection%20featuring%20Ferrari%2C%20Lamborghini%2C%20McLaren%20in%20pristine%20showroom%20with%20elegant%20lighting%2C%20clean%20modern%20background%2C%20premium%20automotive%20photography%2C%20sophisticated%20composition&width=400&height=300&seq=luxury-cars-category&orientation=landscape'
-    },
-    {
-      title: 'Superyachts',
-      //count: '3,500+',
-      description: 'Motor yachts, sailing yachts, and megayachts',
-      image: 'https://readdy.ai/api/search-image?query=Luxury%20superyacht%20in%20pristine%20marina%20with%20elegant%20design%2C%20premium%20yacht%20photography%2C%20sophisticated%20maritime%20setting%2C%20clean%20modern%20composition%2C%20professional%20lighting&width=400&height=300&seq=luxury-yachts-category&orientation=landscape'
-    },
-    {
-      title: 'Private Jets',
-      //count: '1,200+',
-      description: 'Business jets, charter aircraft, and helicopters',
-      image: 'https://readdy.ai/api/search-image?query=Luxury%20private%20jet%20business%20aircraft%20in%20premium%20hangar%20with%20elegant%20lighting%2C%20sophisticated%20aviation%20photography%2C%20clean%20modern%20composition%2C%20professional%20aircraft%20display&width=400&height=300&seq=luxury-jets-category&orientation=landscape'
-    },
-    {
-      title: 'Luxury Watches',
-      //count: '8,500+',
-      description: 'Swiss timepieces, vintage watches, and collectibles',
-      image: 'https://readdy.ai/api/search-image?query=Luxury%20watch%20collection%20Rolex%20Patek%20Philippe%20premium%20timepieces%20elegant%20display%20sophisticated%20watch%20photography%20clean%20modern%20background%20professional%20lighting&width=400&height=300&seq=luxury-watches-category&orientation=landscape'
-    },
-    {
-      title: 'Real Estate',
-      //count: '2,800+',
-      description: 'Estates, penthouses, and exclusive properties',
-      image: 'https://readdy.ai/api/search-image?query=Luxury%20real%20estate%20modern%20mansion%20Beverly%20Hills%20contemporary%20architecture%20premium%20property%20photography%20sophisticated%20composition%20elegant%20design%20clean%20background&width=400&height=300&seq=luxury-realestate-category&orientation=landscape'
-    },
-    {
-      title: 'Fine Art',
-      //count: '5,200+',
-      description: 'Paintings, sculptures, and collectible artwork',
-      image: 'https://readdy.ai/api/search-image?query=Fine%20art%20gallery%20masterpieces%20Picasso%20Monet%20contemporary%20art%20museum%20quality%20artwork%20sophisticated%20art%20photography%20elegant%20display%20premium%20composition%20clean%20background&width=400&height=300&seq=luxury-art-category&orientation=landscape'
-    }
-  ];
-
+export default function Categories() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,7 +62,13 @@ export default function CategoriesSection() {
             <div 
               key={index}
               className="group cursor-pointer h-full flex"
-              onClick={handleClick}
+              onClick={() => {
+                if (category.external) {
+                  window.open(category.href, "_blank");
+                } else {
+                  window.location.href = category.href;
+                }
+              }}
             >
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
                 <div className="aspect-video overflow-hidden">
@@ -76,9 +84,6 @@ export default function CategoriesSection() {
                       <h3 className="text-xl font-bold text-gray-900">
                         {category.title}
                       </h3>
-                      {/* <span className="text-sm font-semibold text-gray-500">
-                        {category.count}
-                      </span> */}
                     </div>
                     <p className="text-gray-600 mb-4">
                       {category.description}
